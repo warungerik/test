@@ -1,0 +1,667 @@
+/* Gaya umum untuk elemen kontainer utama */
+.bg-title-product {
+    /* background-color: hsl(var(--secondary-foreground)); */
+    /* color: hsl(var(--foreground)); */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDAwIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPnBhdGh7b3BhY2l0eTouMTtjbGlwLXBhdGg6dXJsKCNjbGlwUGF0aCk7ZmlsbDp1cmwoI2xpbmVhckdyYWRpZW50KTt9PC9zdHlsZT48Y2xpcFBhdGggaWQ9ImNsaXBQYXRoIj48cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDAwIi8+PC9jbGlwUGF0aD48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhckdyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjkwJSIgeTI9IjAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9ImhzbCgwIDAlIDEwMCUvMSkiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9ImhzbCgwIDAlIDEwMCUvMCkiLz48L2xpbmVhckdyYWRpZW50PjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5MjAsMTAwMClzY2FsZSgtMSwtMSkiPjxwYXRoIGQ9Ik0xMzg0LjUgMzQzLjJMMTkyLjcgMTUzNWwtMjEzLjUtM0wxMzgzIDEyOC4ybDEuNSAyMTV6Ii8+PHBhdGggZD0iTTE5MTkuNyA0NDguM0wxMzU5IDEwMDlsLTEwMC40LTEuNEwxOTE5IDM0Ny4xbC43IDEwMS4yeiIvPjxwYXRoIGQ9Ik0xMTc2LjcgNTE0LjNMNjE2IDEwNzVsLTEwMC40LTEuNEwxMTc2IDQxMy4xbC43IDEwMS4yeiIvPjxwYXRoIGQ9Ik02NDQuNyA0NTcuM0w4NCAxMDE4bC0xMDAuNC0xLjRMNjQ0IDM1Ni4xbC43IDEwMS4yeiIvPjxwYXRoIGQ9Ik0xMzg3LjcgNDQ4LjNMODI3IDEwMDlsLTEwMC40LTEuNEwxMzg3IDM0Ny4xbC43IDEwMS4yeiIvPjxwYXRoIGQ9Ik0xMjUwLjEgNDkzLjhsLTU0NSA1NDUtNTIuNyA0My42IDY0MS45LTY0MS45LTQ0LjIgNTMuM3oiLz48cGF0aCBkPSJNODkxLjEgNjM5LjFMLTc3OCAyMzA4LjNsLTI5OC45LTQuMkw4ODkgMzM4LjFsMi4xIDMwMXoiLz48cGF0aCBkPSJNMTg3MC40IDQxOS44TC0yOC44IDIzMTlsLTM0MC4xLTQuOEwxODY4IDc3LjNsMi40IDM0Mi41eiIvPjxwYXRoIGQ9Ik05MDguNCA0MzYuOEwtOTkwLjggMjMzNmwtMzQwLjEtNC44TDkwNiA5NC4zbDIuNCAzNDIuNXoiLz48cGF0aCBkPSJNMTYzMi40IDUxNS44TC0yNjYuOCAyNDE1bC0zNDAuMS00LjhMMTYzMCAxNzMuM2wyLjQgMzQyLjV6Ii8+PHBhdGggZD0iTTExNzYuMyA1NjcuMUwtMTQ0NS42IDMxODlsLTQ2OS41LTYuNkwxMTczIDk0LjNsMy4zIDQ3Mi44eiIvPjxwYXRoIGQ9Ik0xNDI3LjMgNTgwLjFMLTExOTQuNiAzMjAybC00NjkuNS02LjZMMTQyNCAxMDcuM2wzLjMgNDcyLjh6Ii8+PHBhdGggZD0iTTE2NDkuNSA4ODAuMkw0NTcuNyAyMDcybC0yMTMuNS0zTDE2NDggNjY1LjJsMS41IDIxNXoiLz48cGF0aCBkPSJNNjc1LjggNTIyLjJsLTI2MjEuOSAyNjIxLjktNDY5LjQtNi42TDY3Mi41IDQ5LjRsMy4zIDQ3Mi44eiIvPjxwYXRoIGQ9Ik0yNTk1LjkgNTIyLjJMLTI2IDMxNDQuMWwtNDY5LjUtNi42TDI1OTIuNiA0OS40bDMuMyA0NzIuOHoiLz48L2c+PC9zdmc+);
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: clamp(60em, 100rem, 100em) auto, cover;
+}
+
+.flex {
+    display: flex; /* Mengatur elemen untuk menggunakan flexbox */
+}
+
+.min-h-32 {
+    min-height: 8rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.border-y {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsif untuk layar besar */
+@media (min-width: 1024px) {
+    .lg\:min-h-\[160px\] {
+        min-height: 160px;
+    }
+}
+@media (min-width: 640px) {
+    .sm\:text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+    .sm\:text-sm\/6 {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    .flex-custom {
+        flex-direction: row;
+    }
+    .custom-image {
+        width: 12rem !important;
+        height: 220px !important;
+    }
+
+    .custom-card {
+        display: block;
+    }
+    .custom-card2 {
+        display: none;
+    }
+}
+@media (max-width: 639px) {
+    .flex-custom {
+        flex-direction: column;
+    }
+    .custom-image {
+        width: 8rem !important;
+        height: 150px !important;
+    }
+    .custom-card {
+        display: none;
+    }
+    .custom-card2 {
+        display: block;
+    }
+}
+/* Gaya untuk elemen container */
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Gaya untuk elemen thumbnail produk */
+.product-thumbnail-container {
+    position: relative;
+    top: -4rem;
+    perspective: 25em;
+}
+
+.product-thumbnail-container img {
+    position: relative;
+    transform: rotateY(14deg) rotateX(1deg) !important;
+    transform-origin: left center;
+    transition: transform 0.5s ease-in-out;
+}
+.product-thumbnail-container img:hover {
+    transform: rotateY(0deg) rotateX(0deg) !important;
+}
+.w-32 {
+    width: 12rem;
+}
+
+.md\:w-60 {
+    width: 15rem;
+}
+
+.aspect-square {
+    aspect-ratio: 1 / 1;
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.shadow-2xl {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06); /* Efek bayangan */
+}
+
+.-mb-14 {
+    margin-bottom: -3.5rem; /* Margin negatif ke bawah 3.5 rem */
+}
+
+.md\:-mb-20 {
+    margin-bottom: -5rem; /* Margin negatif ke bawah 5 rem untuk layar sedang dan lebih besar */
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sm\:py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.leading-7 {
+    line-height: 1.75rem; /* Tinggi garis 1.75 rem */
+}
+
+.tracking-wider {
+    letter-spacing: 0.05em; /* Jarak antar huruf */
+}
+
+.sm\:text-lg {
+    font-size: 1.3rem;
+}
+
+.text-base {
+    font-size: 1rem; /* Ukuran font sedang */
+}
+
+.font-medium {
+    font-weight: 500; /* Medium font weight */
+}
+
+.mt-4 {
+    margin-top: 1rem; /* Margin atas 1 rem */
+}
+
+.gap-2 {
+    gap: 0.5rem; /* Jarak antar elemen 0.5 rem */
+}
+
+.sm\:flex-row {
+    flex-direction: row; /* Flex direction ke baris untuk layar kecil */
+}
+
+.sm\:items-center {
+    align-items: center; /* Sejajar vertikal ke tengah untuk layar kecil */
+}
+
+.sm\:gap-8 {
+    gap: 2rem; /* Jarak antar elemen 2 rem untuk layar kecil */
+}
+
+.sm\:gap-4 {
+    gap: 1rem; /* Jarak antar elemen 1 rem untuk layar kecil */
+}
+
+/* Gaya untuk ikon dan teks di dalam container */
+.text-warning {
+    color: #ffd700; /* Warna kuning untuk ikon peringatan */
+}
+
+.text-info {
+    color: #1e90ff; /* Warna biru untuk ikon informasi */
+}
+
+.text-success {
+    color: #32cd32; /* Warna hijau untuk ikon sukses */
+}
+
+.h-5 {
+    height: 1.25rem; /* Tinggi 1.25 rem */
+}
+
+.w-5 {
+    width: 1.25rem; /* Lebar 1.25 rem */
+}
+
+/* Lucide icon styles (for the SVG icons) */
+.lucide {
+    fill: none; /* Tidak ada warna isi */
+    stroke: currentColor; /* Warna garis mengikuti warna teks */
+    stroke-width: 2; /* Ketebalan garis 2px */
+    stroke-linecap: round; /* Ujung garis bulat */
+    stroke-linejoin: round; /* Sambungan garis bulat */
+}
+
+/* Gaya umum untuk membuat elemen agar tidak ada warna jika tidak dibutuhkan */
+.style-none {
+    color: transparent; /* Mengatur warna menjadi transparan */
+}
+
+.containerNominal {
+    position: relative;
+    margin-top: 3rem;
+}
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.text-yellow-400 {
+    color: #f59e0b; /* Warna kuning yang digunakan untuk ikon */
+}
+
+.text-5xl {
+    font-size: 3rem; /* Ukuran font besar untuk rating */
+    line-height: 1; /* Line-height setara dengan ukuran font */
+}
+
+.font-semibold {
+    font-weight: 600; /* Ketebalan font semi-bold */
+}
+
+.text-card-foreground {
+    color: hsl(60 9.09% 97.84%);
+}
+
+.text-lg {
+    font-size: 1.125rem; /* Ukuran font lebih kecil untuk subrating */
+}
+
+.pt-2 {
+    padding-top: 0.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-sm {
+    font-size: 0.875rem; /* Ukuran font kecil untuk teks deskripsi */
+}
+
+.font-semibold {
+    font-weight: 600; /* Ketebalan font semi-bold */
+}
+/* Margin dan Padding */
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.pl-1 {
+    padding-left: 0.25rem;
+}
+
+.ml-1 {
+    margin-left: 0.25rem;
+}
+
+.ml-3 {
+    margin-left: 0.75rem;
+}
+
+/* Fleksibel */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+/* Spasi */
+.space-y-3 > * + * {
+    margin-top: 0.75rem;
+}
+
+/* Ukuran Teks */
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+/* Warna Teks */
+.text-card-foreground {
+    color: hsl(60 9.09% 97.84%);
+}
+
+.text-yellow-400 {
+    color: #f59e0b; /* Warna kuning untuk ikon */
+}
+
+.text-gray-300 {
+    color: #d1d5db; /* Warna abu-abu terang untuk ikon */
+}
+
+.text-text-color {
+    color: inherit; /* Mengikuti warna teks dari elemen induk */
+}
+
+/* Font */
+.font-medium {
+    font-weight: 500;
+}
+
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Tinggi dan Lebar */
+.h-3 {
+    height: 0.75rem;
+}
+
+.h-5 {
+    height: 1.25rem;
+}
+
+.w-3 {
+    width: 0.75rem;
+}
+
+.w-5 {
+    width: 1.25rem;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+/* Teks */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Posisi Relatif dan Absolut */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.inset-y-0 {
+    top: 0;
+    bottom: 0;
+}
+
+/* Latar Belakang dan Batas */
+.bg-gray-100 {
+    background-color: #f3f4f6; /* Warna latar belakang abu-abu terang */
+}
+
+.bg-yellow-400 {
+    background-color: #f59e0b; /* Warna latar belakang kuning */
+}
+
+.border {
+    border-width: 1px;
+}
+
+.border-gray-200 {
+    border-color: #e5e7eb; /* Warna batas abu-abu terang */
+}
+
+.border-yellow-400 {
+    border-color: #f59e0b; /* Warna batas kuning */
+}
+
+.rounded-4 {
+    border-radius: 4px; /* Radius sudut 4px */
+}
+.mt-19 {
+    margin-top: -19px;
+}
+.mt-13 {
+    margin-top: -13px;
+}
+.gap-y-4 {
+    row-gap: 1rem; /* 16px */
+}
+
+/* Garis pemisah vertikal antar elemen */
+.divide-y > * + * {
+    border-top: 1px solid;
+}
+
+.divide-card-foreground\/25 > * + * {
+    border-top-color: rgba(
+        var(--card-foreground-rgb),
+        0.25
+    ); /* Menggunakan warna dari variabel */
+}
+
+/* Border atas dengan warna dan opasitas tertentu */
+.border-t {
+    border-top: 1px solid;
+}
+
+.border-card-foreground\/25 {
+    border-top-color: #fff;
+}
+
+/* Untuk mendefinisikan warna foreground RGB berdasarkan warna HEX */
+:root {
+    --card-foreground-rgb: 51, 51, 51;
+    --secondary: 240 10% 3.92%;
+    --secondary-foreground: 60 9.09% 97.84%;
+}
+
+/* Rounded corners */
+.rounded-lg {
+    border-radius: 0.5rem; /* 8px */
+}
+
+/* Border styles */
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-dashed {
+    border-color: gray !important;
+    border-style: dashed !important;
+}
+
+/* Background color */
+.bg-secondary {
+    background-color: #0f131d !important;
+}
+
+/* Padding */
+.p-44 {
+    padding: 1rem; /* 16px */
+}
+
+/* Text size */
+.text-sm {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+}
+
+/* Text color */
+.text-secondary-foreground {
+    color: #d1d5db; /* Warna teks dari variabel */
+}
+.h-16 {
+    height: 4rem;
+}
+.gap-4 {
+    gap: 0.8rem !important;
+}
+.yellow-400 {
+    --tw-text-opacity: 1;
+    color: #ffeb3b !important;
+}
+.text-sm\/6 {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+.text-xxs {
+    font-size: 0.625rem;
+}
+.bg-background {
+    background-color: #14192b;
+}
+ .containerAlpha .containerML {
+        position: absolute;
+        left: 60px;
+        bottom: -70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15rem;
+        height: 250px;
+        /* border-radius: 10px; */
+    }
+
+    .containerAlpha .containerML .logo-ml {
+        width: 100%;
+        /* border-radius: 10px; */
+    }
+
+    .textImage {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 2px;
+    }
+
+    .flex-thumbnail {
+        display: flex;
+        gap: 1.5rem !important;
+        align-items: flex-start;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .h-56 {
+        height: 14rem;
+    }
+
+    .w-full {
+        width: 100%;
+    }
+
+    .bg-muted {
+        background-color: #F5F5F5;
+    }
+
+    .bg-transparent {
+        background-color: transparent;
+    }
+
+    /* Responsif pada layar besar */
+    @media (min-width: 1024px) {
+        .lg\:h-\[340px\] {
+            height: 340px;
+        }
+    }
+
+    .object-cover {
+        object-fit: cover;
+    }
+
+    .object-center {
+        object-position: center;
+    }
+
+    /* Gaya tambahan untuk gambar */
+    .img-absolute {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        color: transparent;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .choicePay .containers .text .price {
+        color: #fff;
+        display: block;
+    }
+
+    .text-xs {
+        font-size: 0.8rem !important;
+    }
+
+    @media (min-width:640px) {
+        .custom-image {
+            width: 12rem !important;
+            height: 220px !important;
+        }
+    }
+
+    @media (max-width: 639px) {
+        .custom-image {
+            width: 8rem !important;
+            height: 150px !important;
+        }
+    }

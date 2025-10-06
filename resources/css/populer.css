@@ -1,0 +1,220 @@
+.card-populer {
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  position: relative;
+  transition: all ease-in 0.1s;
+}
+
+.card-populer:hover {
+  transition: all ease-in 0.1s;
+  border: 2px solid var(--primary-color);
+}
+
+.card-populer::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1400%;
+  background-color: transparent;
+  animation: animatepop 4s linear infinite;
+}
+.card-populer:hover::before {
+  background-color: var(--primary-color);
+}
+
+[data-theme="dark"] .card-populer:hover::before {
+  background-color: var(--white);
+}
+
+.card-populer::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #14192b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-populer:hover::after {
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+}
+
+@keyframes animatepop {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.card-populer-content {
+  position: relative;
+  z-index: 10;
+  color: aliceblue;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-position: top;
+  background-position-y: 10%;
+  background-size: cover;
+  overflow: hidden;
+  transition: all ease-out 0.1s;
+}
+
+.card-populer-content .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #14192b;
+  opacity: 0.5;
+  transition: all ease-out 0.3s;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.card-populer:hover .card-populer-content .mask {
+  opacity: 0.5;
+  transition: all ease-out 0.3s;
+}
+
+.card-populer-text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  transition: all ease-out 0.3s;
+  flex-grow: 1;
+  padding-right: 4px;
+}
+
+.card-populer:hover .card-populer-text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  transition: all ease-out 0.3s;
+  padding-right: 4px;
+}
+
+.card-populer-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  position: relative;
+  z-index: 20;
+  transition: all ease-out 0.3s;
+}
+
+.card-populer-img img {
+  border-radius: 10px;
+  height: calc(100% - 30px);
+  aspect-ratio: 1/1;
+  /* border: 1px solid var(--white); */
+  transition: all ease-out 0.3s;
+}
+
+.card-populer:hover .card-populer-img {
+  /* padding: 0px 20px; */
+  transition: all ease-out 0.3s;
+}
+
+.card-populer:hover .card-populer-img img {
+  height: calc(100% - 30px);
+  transition: all ease-out 0.3s;
+}
+
+.card-populer-content {
+  display: flex;
+  align-items: center;
+}
+
+.card-populer:hover .card-populer-content {
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  transition: all ease-out 0.1s;
+  position: relative;
+}
+
+.card-populer-content h1 {
+  font-size: 14px;
+  color: var(--white);
+  font-weight: 600;
+  text-shadow: 1px 1px 4px #14192b;
+}
+
+.card-populer:hover .card-populer-content h1 {
+  font-size: 16px;
+}
+
+.card-populer-content span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 4px #14192b;
+  text-align: start;
+}
+
+@media (max-width: 756px) {
+  .card-populer-content h1 {
+    font-size: 12px;
+    /* text-align: start; */
+  }
+
+  .card-populer:hover .card-populer-content h1 {
+    font-size: 14px;
+    /* text-align: start; */
+  }
+
+  .card-populer-content span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-populer-content h1 {
+    font-size: 0.625rem;
+    /* text-align: start; */
+  }
+
+  .card-populer:hover .card-populer-content h1 {
+    font-size: 12px;
+    text-align: start;
+  }
+
+  .card-populer-content span {
+    font-size: 10px;
+  }
+
+  .card-populer {
+    height: 80px;
+  }
+
+  .card-populer:hover .card-populer-img img {
+    height: calc(100% - 30px);
+  }
+
+  .card-populer .card-populer-img {
+    padding: 0px 10px;
+  }
+
+  .card-populer-img img {
+    border-radius: 10px;
+  }
+}
